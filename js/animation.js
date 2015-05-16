@@ -6,19 +6,36 @@
 
 console.log("test");
 
-//INDEX JS
+
+//Adding Active Class To Menu Items
+function addclass(elem) {
+    var a = document.getElementById('box1')
+    for (i = 0; i < a.length; i++) {
+        a[i].classList.remove('fadeinup')
+    }
+    elem.classList.add('fadeinup');
+}
 
 var box1 = document.getElementById("box1");
+box1.onclick = addclass;
 
-box1.onclick = function () {
-	console.log("test2");
- if (classie.has(box1,"fadeinup")) {
-    classie.remove(box1,"fadeinup");
-} else {
-    classie.add(box1,"fadeinup");
-}
-};
 
+
+
+// //INDEX JS
+// var box1 = document.getElementById("box1");
+// box1.onclick = function () {
+// 	console.log("test2");
+//  if (classie.has(box1,"fadeinup")) {
+//     classie.remove(box1,"fadeinup");
+// } else {
+//     classie.add(box1,"fadeinup");
+// }
+// };
+
+
+
+//Material Design JS
 var navItems = document.querySelectorAll("ul li");
 var slider = document.querySelectorAll(".slider");
 var ripple = document.querySelectorAll(".ripple");
