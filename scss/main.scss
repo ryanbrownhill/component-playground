@@ -1,5 +1,3 @@
-@import "vendors/bootstrap";
-@import "vendors/jquery-ui";
 // @import "toolkit";
 
 @import "utils/variables";
@@ -20,4 +18,7 @@
 @import "layout/forms";
 
 @import "animation/animationbase";
+
+@import "components/material-nav";
+
 @import "shame/shame";

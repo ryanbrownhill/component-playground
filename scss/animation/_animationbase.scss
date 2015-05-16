@@ -18,6 +18,17 @@
     animation-name: fadeInRight;
   }
 
+  .rippleEffect {
+    animation: rippleDrop .5s linear;
+  }
+
+
+@keyframes rippleDrop {
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
 
 
 @keyframes fadeIn {

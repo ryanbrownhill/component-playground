@@ -1,0 +1,47 @@
+.nav1 {
+
+ul {
+  font-size: 0;
+  position: relative;
+  padding: 0;
+  width: 480px;
+  margin: 40px auto;
+  user-select: none;
+}
+
+li {
+  display: inline-block;
+  width: 160px;
+  height: 60px;
+  background: $grey-3;
+  font-size: 16px;
+  text-align: center;
+  line-height: 60px;
+  color: $grey-1;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.slider {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  background: $brand-secondary;
+  transition: all 0.5s;
+}
+/*  Ripple */
+
+.ripple {
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  transform: scale(0);
+  position: absolute;
+  opacity: 1;
+}
+}
