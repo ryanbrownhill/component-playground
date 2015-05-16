@@ -1,0 +1,15 @@
+.header {
+	// text-align: center;
+	// display: inline-block;
+	// clear: both;
+	// padding-top: 10px;
+	// background-color: blue;
+ &:before {
+ 	content: "";
+ 	float: left;
+ 	margin: 0 10px 0 0;
+	height: 50px;
+	border: solid 1px black;
+ }
+
+}

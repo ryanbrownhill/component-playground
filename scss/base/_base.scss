@@ -1,0 +1,13 @@
+/**
+ * Basic styling
+ */
+
+body {
+	background-color: $background-color;
+	@extend %font-copy;
+}
+
+h1 {
+	@extend %font-header;
+	color: $grey-4;
+}
