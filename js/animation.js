@@ -7,17 +7,17 @@
 console.log("test");
 
 
-//Adding Active Class To Menu Items
-function addclass(elem) {
-    var a = document.getElementById('box1')
-    for (i = 0; i < a.length; i++) {
-        a[i].classList.remove('fadeinup')
-    }
-    elem.classList.add('fadeinup');
-}
+// //Adding Active Class To Menu Items
+// function addclass(elem) {
+//     var a = document.getElementById('box1')
+//     for (i = 0; i < a.length; i++) {
+//         a[i].classList.remove('fadeinup')
+//     }
+//     elem.classList.add('fadeinup');
+// }
 
-var box1 = document.getElementById("box1");
-box1.onclick = addclass;
+// var box1 = document.getElementById("box1");
+// box1.onclick = addclass;
 
 
 
