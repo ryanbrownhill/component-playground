@@ -1,0 +1,63 @@
+%circle {
+  background: $brand-color;
+  position:absolute;
+  border-radius:100%;
+  width:80px;
+  height:80px;
+  line-height:80px;
+  margin-left:-40px;
+  top:20px;
+  color:white;
+  transform:translate3d(0,0,0);
+  transition:transform ease-out 200ms;
+}
+
+.menu {
+  position: relative;
+  padding: 0;
+  width: 80px;
+  height: 80px;
+  margin: auto;
+  // padding-top:20px;
+  font-size:20px;
+  text-align:center;
+}
+
+.menu-open {
+    display:none;
+}
+
+.menu-open-button {
+  @extend %circle;
+  z-index:2;
+  transition-timing-function:cubic-bezier(0.175, 0.885, 0.320, 1.275);
+  transition-duration:400ms;
+  transform:scale(1.1,1.1) translate3d(0,0,0);
+  cursor:pointer;
+}
+
+.menu-item {
+  @extend %circle;
+}
+
+$menu-items: 5;
+
+.menu-open:checked~.menu-item {
+  transition-timing-function:cubic-bezier(0.935, 0.000, 0.340, 1.330);
+  @for $i from 1 through $menu-items{
+    &:nth-child(#{$i+2}){
+      transition-duration:80ms+(80ms*$i);
+      transform: translate3d(#{100 * ($i)}px,100px,0);
+}
+}}
+
+
+a:focus {
+    color: blue;
+    background-color: #cf5c3f;
+}
+
+.active {
+    color: blue;
+    background-color: #cf5c3f;
+}
